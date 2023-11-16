@@ -24,10 +24,10 @@ const StyledMenu = styled.nav`
     padding: 5px;
   }
 
-  & li:hover {
-    transition: all .5s ease;
-    border-bottom: 1px solid rgba(6,49,131,0.5);
-    color: rgba(6,49,131,0.5);
-  }
+  //& li:hover {
+  //  transition: all .5s ease;
+  //  border-bottom: 1px solid rgba(6,49,131,0.5);
+  //  color: rgba(6,49,131,0.5);
+  //}
 `
 

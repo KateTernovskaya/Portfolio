@@ -6,7 +6,7 @@ import {Menu} from "../../components/menu/Menu";
 export const Header = () => {
     return (
         <StyledHeader>
-            <Logo/>
+            <Logo fill={"rgba(6,49,131,0.5)"}/>
             <Menu/>
 
         </StyledHeader>
@@ -14,8 +14,8 @@ export const Header = () => {
 };
 
 const StyledHeader = styled.header`
-  display: flex;
-  justify-content: space-between;
+ display: flex;
   align-items: center;
-  padding: 20px 0;
+  justify-content: space-between;
+background-color: cadetblue;
 `
