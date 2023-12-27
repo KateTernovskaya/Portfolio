@@ -1,7 +1,7 @@
 import React from 'react';
-import {FlexWrapper} from "../../../../components/FlexWrapper";
+import {FlexWrapper} from "../../../../components/wrapper/FlexWrapper";
 import {Icon} from "../../../../components/icon/Icon";
-import styled from "styled-components";
+import {S} from '../Skills_Styles'
 
 type SkillPropsType = {
     iconId: string
@@ -9,28 +9,14 @@ type SkillPropsType = {
     description: string
 }
 
-export const Skill = (props: SkillPropsType) => {
+export const Skill: React.FC<SkillPropsType> = (props: SkillPropsType) => {
     return (
-        <StyledSkill>
-            <FlexWrapper align={'center'}>
+        <S.Skill>
+            <FlexWrapper align={'center'} gap={'20px'}>
                 <Icon iconId={props.iconId}/>
-                <SkillTitle>{props.title}</SkillTitle>
+                <S.SkillTitle>{props.title}</S.SkillTitle>
             </FlexWrapper>
-            <SkillText>{props.description}</SkillText>
-        </StyledSkill>
+            <S.SkillText>{props.description}</S.SkillText>
+        </S.Skill>
     );
 };
-
-const StyledSkill = styled.div`
-width: 30%;
-  margin: 10px;
-
-`
-const SkillTitle = styled.h4`
-
-`
-
-const SkillText = styled.p`
-
-`
-

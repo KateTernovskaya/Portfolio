@@ -1,27 +1,20 @@
 import React from 'react';
-import styled from "styled-components";
-import {Menu} from "../../components/menu/Menu";
-import {itemsMenu} from "../header/Header";
+import {DesktopMenu} from "../header/headerMenu/desktopMenu/DesktopMenu";
 import {Logo} from "../../components/logo/Logo";
-import {FlexWrapper} from "../../components/FlexWrapper";
+import {FlexWrapper} from "../../components/wrapper/FlexWrapper";
+import {Container} from "../../components/wrapper/Container";
+import {S} from './Footer_Styles';
 
-export const Footer = () => {
+export const Footer: React.FC = () => {
     return (
-        <StyledFooter>
-            <FlexWrapper>
-                <Menu menuItems={itemsMenu}/>
-                <Logo fill={'white'} />
-            </FlexWrapper>
-            <Copyright>© 2023 Ekaterina Ternovskaya, All Rights Reserved.</Copyright>
-        </StyledFooter>
+        <S.Footer>
+            <Container>
+                <FlexWrapper align={'center'} justify={"space-between"}>
+                    <DesktopMenu />
+                    <Logo fill={"white"} />
+                </FlexWrapper>
+                <S.Copyright>© 2023 Ekaterina Ternovskaya, All Rights Reserved.</S.Copyright>
+            </Container>
+        </S.Footer>
     );
 };
-
-const StyledFooter = styled.footer`
-  background-color: rgba(121, 26, 121, 0.6);
-`
-
-const Copyright = styled.small`
-  
-`
-
