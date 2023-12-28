@@ -14,8 +14,8 @@ const projectData = [
         title: 'Portfolio',
         src: ProjImg4,
         text: 'The LoftHouse residential complex is a business class project.',
-        hrefBtn: 'https://kateternovskaya.github.io/LoftHouse/',
-        hrefIcon: 'https://github.com/KateTernovskaya/LoftHouse',
+        hrefBtn: 'https://kateternovskaya.github.io/Portfolio/',
+        hrefIcon: 'https://github.com/KateTernovskaya/Portfolio',
     },
     {
         title: 'Loft House',
@@ -35,8 +35,8 @@ const projectData = [
         title: 'Creative Art',
         src: ProjImg3,
         text: 'Website for creating and publishing NFT works',
-        hrefBtn: 'https://kateternovskaya.github.io/LoftHouse/',
-        hrefIcon: 'https://github.com/KateTernovskaya/LoftHouse',
+        hrefBtn: 'https://kateternovskaya.github.io/CreativeArt/',
+        hrefIcon: 'https://github.com/KateTernovskaya/CreativeArt',
     },
 
 ]
